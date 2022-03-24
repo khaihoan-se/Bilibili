@@ -1,12 +1,10 @@
 import React from 'react';
-import LangIcon from '../asset/icons/LangIcon';
-import SearchIcon from '../asset/icons/SearchIcon';
+import Logo from '../asset/icons/Logo';
 
 const Narbar = () => {
   return (
-    <div>
-      <SearchIcon className="icon__header" />
-      <LangIcon className="icon__header" />
+    <div className='container'>
+        <Logo />
     </div>
   );
 }
