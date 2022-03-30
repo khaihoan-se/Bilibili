@@ -1,11 +1,13 @@
 import React from 'react'
-import NarBar from './components/partials/NavBar/Narbar'
+import BaseLayout from './components/layouts/BaseLayout'
 
 
 const App = () => {
    return (
       <div className="app">
-         <NarBar />
+         <BaseLayout>
+            
+         </BaseLayout>
       </div>
    )
 }

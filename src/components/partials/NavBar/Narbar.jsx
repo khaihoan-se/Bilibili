@@ -4,18 +4,18 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 import Logo from '../../icons/Logo';
-import SearchIcon from '../../icons/SearchIcon'
 import LangIcon from '../../icons/LangIcon'
 import DownloadIcon from '../../icons/DownloadIcon'
 import BtnDow from '../../icons/BtnDow'
 import BtnUpload from '../../icons/BtnUpload'
-import Avatar from '../../Avatar/Avatar';
+import Avatar from '../../shared/avatar/Avatar';
+import Search from '../../shared/search/Search';
 
-const Narbar = () => {
+const NavBar = () => {
     return (
         <div className="navbar">
             {/* container */}
-            <div className="container">
+            <div className="container media-width">
                 {/* Header left -- Logo */}
                 <Link className="navbar__left" to='/'>
                     <Logo className='navbar__left-logo' />
@@ -23,14 +23,7 @@ const Narbar = () => {
                 {/* Header right -- search -- toool */}
                 <div className="navbar__right">
                     {/* Header right --- search */}
-                    <div className="comp__search">
-                        <div className="comp__search-main">
-                            <input className='comp__search-main-input' type="text" />
-                            {/* popup search */}
-                            {/* icon search */}
-                            <SearchIcon className='comp__search-main-search__icon' />
-                        </div>
-                    </div>
+                    <Search className='comp__search search-desktop' />
                     {/* Header right -- dropdown */}
                     <div className="comp__dropdown dropdown">
                         <button className="comp__dropdown-btn">
@@ -48,15 +41,19 @@ const Narbar = () => {
                         <div className="comp__cell-title">Tải lên</div>
                     </Link>
                     {/* Header right -- avatar */}
-                    <div className="comp__cell">
-                        <div className="comp__avatar dropdown">
+                    <div className="login-avatar">
+                        {/* <div className="comp__avatar dropdown">
                             <Avatar />
+                        </div> */}
+                        <div className="title-login">
+                            Đăng nhập
                         </div>
                     </div>
                 </div>
             </div>
+            <Search className='comp__search search-mobile' />
         </div>
     )
 }
 
-export default Narbar;
+export default NavBar;

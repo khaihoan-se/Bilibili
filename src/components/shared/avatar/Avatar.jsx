@@ -1,7 +1,7 @@
 import './style.scss'
 
 import React from 'react'
-import AvatarPng from '../../asset/avatar.jpeg'
+import AvatarPng from '../../../asset/avatar.jpeg'
 
 const Avatar = () => {
     return (

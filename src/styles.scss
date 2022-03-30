@@ -33,7 +33,7 @@ $fz-text-header: 14px;
 
 /*BOXED LAYOUT*/
 $container-max-width: 1920px;
-$container-width: 1268px; // tùy thuộc vào container của bản thiết kế mà chỉnh sửa cho hợp lý
+$container-width: 1348px; // tùy thuộc vào container của bản thiết kế mà chỉnh sửa cho hợp lý
 
 /*GRID - media queries breakpoints*/
 $xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
@@ -288,79 +288,58 @@ body {
 	behavior: smooth;
     position: relative;
     @include customscroll();
-    .container {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .container-fluid {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-    .no-gutters {
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .no-gap > .col,
-    .no-gap > [class*="col-"] {
-        padding-right: 0;
-        padding-left: 0;
-    }
+    // .container {
+    //     width: 100%;
+    //     padding-right: 15px;
+    //     padding-left: 15px;
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
+    // .container-fluid {
+    //     width: 100%;
+    //     padding-right: 15px;
+    //     padding-left: 15px;
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
+    // .row {
+    //     display: -webkit-box;
+    //     display: -ms-flexbox;
+    //     display: flex;
+    //     -ms-flex-wrap: wrap;
+    //     flex-wrap: wrap;
+    //     margin-right: -15px;
+    //     margin-left: -15px;
+    // }
+    // .no-gutters {
+    //     margin-right: 0;
+    //     margin-left: 0;
+    // }
+    // .no-gap > .col,
+    // .no-gap > [class*="col-"] {
+    //     padding-right: 0;
+    //     padding-left: 0;
+    // }
 
-    @media (min-width: $xxs-min) {
-        .container {
-            max-width: 540px;
-        }
-    }
-    @media (min-width: $xs-min) {
-        .container {
-            max-width: 720px;
-        }
-    }
-    @media (min-width: $sm-min) {
-        .container {
-            max-width: 960px;
-        }
-    }
-    @media (min-width: $md-min) {
-        .container {
-            max-width: $container-width;
-        }
-    }
-
-    .mainwrapper {
-        width: 100%;
-        margin: auto;
-    }
-    @include lg {
-        // CSS responsive large desktop
-    }
-    @include md {
-        // CSS responsive desktop
-    }
-    @include sm {
-        // CSS responsive tablet
-    }
-    @include xs {
-        // CSS responsive mobile
-    }
-    @include xxs {
-        // CSS responsive small mobile
-    }
+    // .mainwrapper {
+    //     width: 100%;
+    //     margin: auto;
+    // }
+		// @include lg {
+		// 	// CSS responsive large desktop
+		// }
+		// @include md {
+		// 	// CSS responsive desktop
+		// }
+		// @include sm {
+		// 	// CSS responsive tablet
+		// }
+		// @include xs {
+		// 	// CSS responsive mobile
+		// }
+		// @include xxs {
+		// 	// CSS responsive small mobile
+		// }
 }
 
 
@@ -369,4 +348,8 @@ body {
     -webkit-animation: change-opacity .5s forwards;
     animation: change-opacity .5s forwards;
     z-index: 100;
+}
+
+.layout {
+	min-height: 100vh;
 }
