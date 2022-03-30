@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchPng from '../icon_search.png'
+import SearchPng from '../../asset/icon_search.png'
 
 const SearchIcon = ({ className }) => {
   return (

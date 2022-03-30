@@ -3,13 +3,13 @@ import './style.scss'
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import Logo from '../../asset/icons/Logo';
-import SearchIcon from '../../asset/icons/SearchIcon'
-import LangIcon from '../../asset/icons/LangIcon'
-import DownloadIcon from '../../asset/icons/DownloadIcon'
-import BtnDow from '../../asset/icons/BtnDow'
-import BtnUpload from '../../asset/icons/BtnUpload'
-import Avatar from '../Avatar/Avatar';
+import Logo from '../../icons/Logo';
+import SearchIcon from '../../icons/SearchIcon'
+import LangIcon from '../../icons/LangIcon'
+import DownloadIcon from '../../icons/DownloadIcon'
+import BtnDow from '../../icons/BtnDow'
+import BtnUpload from '../../icons/BtnUpload'
+import Avatar from '../../Avatar/Avatar';
 
 const Narbar = () => {
     return (
@@ -39,17 +39,13 @@ const Narbar = () => {
                         </button>
                     </div>
                     {/* Header right -- cell */}
-                    <Link to='/download'>
-                        <a className='comp__cell' target='_blank'>
-                            <BtnDow className='comp__cell-icon' />
-                            <div class="comp__cell-title">Tải ứng dụng</div>
-                        </a>
+                    <Link className='comp__cell' to='/download'>
+                        <BtnDow className='comp__cell-icon' />
+                        <div className="comp__cell-title">Tải ứng dụng</div>
                     </Link>
-                    <Link to='/'>
-                        <a className='comp__cell' target='_blank'>
-                            <BtnUpload className='comp__cell-icon' />
-                            <div class="comp__cell-title">Tải lên</div>
-                        </a>
+                    <Link className='comp__cell' to='/' target={'_blank'}>
+                        <BtnUpload className='comp__cell-icon' />
+                        <div className="comp__cell-title">Tải lên</div>
                     </Link>
                     {/* Header right -- avatar */}
                     <div className="comp__cell">
